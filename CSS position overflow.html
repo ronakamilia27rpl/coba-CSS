@@ -1,0 +1,64 @@
+<html>
+    <style media="screen">
+        .container{
+            width: 50%;
+            height: 200px;
+            overflow: auto;
+            margin-left: 0 auto;
+        }
+        .static{ position: static; border: 2px solid green;}
+        .relative{
+            position: relative ;
+            border: 2px solid red;
+            left: 20px; /*jarak dari posisi paling kiri sebesar 20px */
+            bottom: 0; /*jarak dari posisi paling bawah sebesar 0px*/
+        }
+        .absolute{ position: absolute; border: 2px solid blue; left: 20px; bottom: 40px;}
+        .fixed{ position: fixed; border: 2px solid black; bottom: 0; right: 0;}
+        .sticky{
+            position: sticky;
+            border: 2px solid yellow;
+            top: 0;
+            left: 20px;
+            background: darkblue;
+            color: white;
+        }
+    </style>
+
+    <div class="container">
+        <p class="sticky">
+            Ini adalah contoh dari posisi sticky
+        </p>
+
+        <p class="static">
+            <b>Ini adalah contoh dari position static</b> <br>
+            Pada setiap elemen mempunyai ukuran panjang dan lebar yang telah ditentukan.
+            Apabila konten di dalam elemen melebihi ukuran dari panjang atau lebar elemen,
+            maka trik untuk mengatasi konten yang overlapping dengan menggunakan property
+            overflow. Overflow digunakan untuk memunculkan scroll bar jika konten pada
+            sebuah elemen melebihi ukuran elemen tersebut.
+        </p>
+
+        <p class="relative">
+            <b>Ini adalah contoh dari position relative</b><br>
+            Pada setiap elemen mempunyai ukuran panjang dan lebar yang telah ditentukan.
+            Apabila konten di dalam elemen melebihi ukuran dari panjang atau lebar elemen,
+            maka trik untuk mengatasi konten yang overlapping dengan menggunakan property
+            overflow. Overflow digunakan untuk memunculkan scroll bar jika konten pada
+            sebuah elemen melebihi ukuran elemen tersebut.
+        </p>
+
+        <p class="absolute">
+            <b>Ini adalah contoh dari position absolute</b><br>
+            Pada setiap elemen mempunyai ukuran panjang dan lebar yang telah ditentukan.
+            Apabila konten di dalam elemen melebihi ukuran dari panjang atau lebar elemen,
+            maka trik untuk mengatasi konten yang overlapping dengan menggunakan property
+            overflow. Overflow digunakan untuk memunculkan scroll bar jika konten pada
+            sebuah elemen melebihi ukuran elemen tersebut.
+        </p>
+
+        <p class="fixed">
+            Ini merupakan contoh dari position fixed
+        </p>
+    </div>
+</html>
